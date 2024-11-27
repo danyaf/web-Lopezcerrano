@@ -378,3 +378,60 @@ main.min-main {
 .arialp{
     font-size:13px !important;
 }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin: 20px auto;
+    padding: 30px 0;
+    border: 3px  rgb(220, 220, 220);
+}
+
+.container h2{
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: normal;
+    color: #221c1c;
+}
+
+.container p{
+    text-align: center;
+    margin-bottom: -15px;
+    margin-top: 10px;
+}
+
+.img-wraper{
+    width: 33.3%;
+    padding-top: calc(33.3% / 1.6);
+    float: left;
+    background-color: #fff;
+    position: relative;
+    border: 4px solid #fff;
+}
+
+.img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
