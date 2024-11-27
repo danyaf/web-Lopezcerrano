@@ -20,10 +20,10 @@ menu.addEventListener("click", () => {
     }
 });
 
-palanca.addEventListener("click", () => {
+/* palanca.addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
     circulo.classList.toggle("prendido");
-});
+}); */
 
 logo.addEventListener("click", () => {
     barraLateral.classList.toggle("mini-barra-lateral");
