@@ -1,0 +1,45 @@
+
+
+CREATE DATABASE lopez_serrano;
+GO
+USE lopez_serrano;
+
+CREATE TABLE clothing (
+     id MEDIUMINT NOT NULL AUTO_INCREMENT,
+     nombre VARCHAR(50) NOT NULL,
+     tipo VARCHAR(30) NOT NULL,
+     descripcion VARCHAR(900) NULL,
+     comodin VARCHAR(100) NULL,
+     PRIMARY KEY (id)
+);
+
+CREATE TABLE paintings (
+     id MEDIUMINT NOT NULL AUTO_INCREMENT,
+     nombre VARCHAR(50) NOT NULL,
+     tipo VARCHAR(30) NOT NULL,
+     descripcion VARCHAR(900) NULL,
+     comodin VARCHAR(100) NULL,
+     PRIMARY KEY (id)
+);
+
+--------------------------------------Insert clothing y paiting -------------------
+INSERT INTO `clothing`(`Nombre`, `tipo`, `descripcion`) VALUES ('diosred','jpg','es el dios mas poderoso del universo');
+INSERT INTO `clothing`(`Nombre`, `tipo`, `descripcion`) VALUES ('isla','jpg','es el dios mas poderoso del universo');
+INSERT INTO `clothing`(`Nombre`, `tipo`, `descripcion`) VALUES ('lagos','jpg','es el dios mas poderoso del universo');
+INSERT INTO `clothing`(`Nombre`, `tipo`, `descripcion`) VALUES ('luna','jpg','es el dios mas poderoso del universo');
+INSERT INTO `clothing`(`Nombre`, `tipo`, `descripcion`) VALUES ('morado','jpg','es el dios mas poderoso del universo');
+INSERT INTO `clothing`(`Nombre`, `tipo`, `descripcion`) VALUES ('paisa','jpg','es el dios mas poderoso del universo');
+INSERT INTO `clothing`(`Nombre`, `tipo`, `descripcion`) VALUES ('patron','jpg','es el dios mas poderoso del universo');
+INSERT INTO `clothing`(`Nombre`, `tipo`, `descripcion`) VALUES ('thumb-3','jpg','es el dios mas poderoso del universo');
+INSERT INTO `clothing`(`Nombre`, `tipo`, `descripcion`) VALUES ('vegeta','jpg','es el dios mas poderoso del universo');
+
+
+INSERT INTO `paintings`(`Nombre`, `tipo`, `descripcion`) VALUES ('diosred','jpg','es el dios mas poderoso del universo');
+INSERT INTO `paintings`(`Nombre`, `tipo`, `descripcion`) VALUES ('isla','jpg','es el dios mas poderoso del universo');
+INSERT INTO `paintings`(`Nombre`, `tipo`, `descripcion`) VALUES ('lagos','jpg','es el dios mas poderoso del universo');
+INSERT INTO `paintings`(`Nombre`, `tipo`, `descripcion`) VALUES ('luna','jpg','es el dios mas poderoso del universo');
+INSERT INTO `paintings`(`Nombre`, `tipo`, `descripcion`) VALUES ('morado','jpg','es el dios mas poderoso del universo');
+INSERT INTO `paintings`(`Nombre`, `tipo`, `descripcion`) VALUES ('paisa','jpg','es el dios mas poderoso del universo');
+INSERT INTO `paintings`(`Nombre`, `tipo`, `descripcion`) VALUES ('patron','jpg','es el dios mas poderoso del universo');
+INSERT INTO `paintings`(`Nombre`, `tipo`, `descripcion`) VALUES ('thumb-3','jpg','es el dios mas poderoso del universo');
+INSERT INTO `paintings`(`Nombre`, `tipo`, `descripcion`) VALUES ('vegeta','jpg','es el dios mas poderoso del universo');
