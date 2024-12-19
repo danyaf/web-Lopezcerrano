@@ -131,7 +131,7 @@ body {
     align-items: center;
 }
 
-.barra-lateral .nombre-pagina ion-icon {
+.barra-lateral .nombre-pagina {
     min-width: 50px;
     font-size: 40px;
     cursor: pointer;
