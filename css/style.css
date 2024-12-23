@@ -376,7 +376,7 @@ main.min-main {
 }
 
 .arialp{
-    font-size:13px !important;
+    font-size:8px !important;
 }
 
 
@@ -414,6 +414,7 @@ html{
     text-align: center;
     margin-bottom: -15px;
     margin-top: 10px;
+    font-size: 10%;
 }
 
 .img-wraper{
