@@ -13,7 +13,12 @@
         th,
         td {
             padding: 0.4rem !important;
-        }
+        }       
+        .padre{
+        text-align: center;
+        width:100%;
+        
+        }  
     </style>
 </head>
 
@@ -22,66 +27,38 @@
     <?php
         include_once ("../controlador/conexion.php");
         $result =  Cconexion::ConexionBD("clothing");
-        $conta = 1;
        
         if ($result->num_rows > 0) {
     ?>
 
-        <table id="tablax" class="table table-striped table-bordered" style="width:100%">
+        <table id="tablax" style="width:100%">
             <thead>
                 <th>
-                    IMAGEN
+                    
                 </th>
-                <th>DESCRIPCION</th>
-                <th>
-                    IMAGEN
-                </th>
-                <th>DESCRIPCION</th>
-                <th>
-                    IMAGEN
-                </th>
-                <th>DESCRIPCION</th>
-                </thead>
+            </thead>
                 <tbody>
-                    <tr>
+                    
             
                     <?php   while($row = $result->fetch_assoc()) { ?>
-                        <td>
-                
-                            <a class="example-image-link " href=<?php echo '../uploadc/'.$row["nombre"].'.'.$row["tipo"].' '  ?>
-                                data-lightbox="example-set" data-title=<?php echo $row["nombre"] ?>><img
-                                    class="example-image" width=100% height="100%"
-                                    src=<?php echo '../uploadc/'.$row["nombre"].'.'.$row["tipo"].' '  ?> alt="" /></a>
-                        </td>
-                        <td style="text-align: justify;"> 
-                            <strong> <?php echo $row["nombre"].'<br>' ?> </strong>
+                        <tr> 
+                            <td>
+                        
+                                <div class="padre">
+                                <a class="example-image-link mi-clase" href=<?php echo '../uploadc/'.$row["nombre"].'.'.$row["tipo"].' '  ?>
+                                    data-lightbox="example-set" data-title=<?php echo $row["nombre"] ?>><img
+                                        class="example-image" width=60% height="60%"
+                                        src=<?php echo '../uploadc/'.$row["nombre"].'.'.$row["tipo"].' '  ?> alt="" /></a>
+                                </div>
+                                <div style="text-align: center;">
+                                <strong> <?php echo str_replace("_", " ", $row["nombre"].'<br>'); ?> </strong>
                                 <?php echo $row["descripcion"] ?>
-                        </td>
-                        
-                        <?php  if($conta == $result->num_rows && !($result->num_rows %3==0)){ ?>
-                                <td></td><td></td>
-                                <?php  if($result->num_rows %2==0){ ?>
-                                    <td></td><td></td>
-                                <?php } ?>
-
-                                
-                        <?php } ?>
-
-                    <?php  if($conta%3==0){ ?>
-                        
-                    </tr>
-                    <?php  if(!$result->num_rows == $conta){ ?>
-                        <tr>
+                                </div> 
+                         
+                                        
+                            </td>
+                        </tr>
                     <?php } ?>
-                   
-                    <?php } ?>
-                
-                    <?php $conta ++;
-                 } ?>
-            <?php  if($result->num_rows == $conta){ ?>
-            </tr>
-            <?php } ?>
-
             </tbody>
                 </table>
               
