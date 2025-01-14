@@ -8,7 +8,7 @@
                 // Establecer la conexión a la base de datos MySQL
                 // mysqli_connect("servidor", "usuario", "clave", "base de datos")
 
-                $conn = new mysqli("localhost", "root", "", "lopez_serrano");
+                $conn = new mysqli("localhost", "lopezser_root", "Root2025-*+", "lopezser_rano");
                 // Si la conexión fue exitosa, se muestra un mensaje de éxito
             
                 if ($conn->connect_error) {
