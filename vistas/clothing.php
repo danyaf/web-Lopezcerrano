@@ -47,7 +47,7 @@
                                 <div class="padre">
                                 <a class="example-image-link mi-clase" href=<?php echo '../uploadc/'.$row["nombre"].'.'.$row["tipo"].' '  ?>
                                     data-lightbox="example-set" data-title=<?php echo $row["nombre"] ?>><img
-                                        class="example-image" width=60% height="60%"
+                                        class="example-image" width=5% height="5%" 
                                         src=<?php echo '../uploadc/'.$row["nombre"].'.'.$row["tipo"].' '  ?> alt="" /></a>
                                 </div>
                                 <div style="text-align: center;">
